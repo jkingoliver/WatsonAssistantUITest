@@ -42,6 +42,6 @@ spec:
           - name: service_watson_conversation
             valueFrom:
               secretKeyRef:
-                name: {{ .Values.services.conversation.secretKeyRefs }}
+                name: {{ .Values.services.conversation.secretKeyRef }}
                 key: binding
                 optional: true
