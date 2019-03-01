@@ -39,6 +39,9 @@ spec:
             value : "{{ .Values.service.servicePort }}"
           - name: APPLICATION_NAME
             value: "{{ .Release.Name }}"
-{{- if .Values.generatedBindings.enabled }}
-{{.Files.Get "bindings.yaml" | indent 10 }}
-{{- end }}
+          - name: service_watson_conversation
+            valueFrom:
+              secretKeyRef:
+                name: {{ .Values.services.conversation.secretKeyRefs }}
+                key: binding
+                optional: true
