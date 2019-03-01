@@ -89,6 +89,9 @@ stages:
   - name: IMAGE_REGISTRY_TOKEN
     value: ${IMAGE_REGISTRY_TOKEN}
     type: text
+  - name: CONVERSATION
+    value: ${CONVERSATION}
+    type: text
   triggers:
   - type: stage
   jobs:
