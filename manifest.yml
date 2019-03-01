@@ -1,0 +1,12 @@
+---
+applications:
+- instances: 1
+  timeout: 180
+  name: watsonAssistantUITest
+  buildpack: sdk-for-nodejs
+  command: npm start
+  memory: 256M
+  domain: not-used.net
+  host: not-used
+  services:
+    - watsonassistantui-conversation-1551375281826
