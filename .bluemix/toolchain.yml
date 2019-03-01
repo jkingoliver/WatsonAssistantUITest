@@ -41,6 +41,7 @@ services:
           IMAGE_REGISTRY_TOKEN: "{{form.pipeline.parameters.image-registry-token}}"
           REGISTRY_NAMESPACE: "{{form.pipeline.parameters.registry-namespace}}"
           REGION_ID: "{{form.pipeline.parameters.dev-region}}"
+          CONVERSATION: "{{form.pipeline.parameters.conversation}}"
         execute: true
 
   #Web IDE
@@ -63,3 +64,4 @@ form:
       image-pull-secret-name: "{{image-pull-secret-name}}"
       image-registry-token: "{{image-registry-token}}"
       registry-namespace: jk_namespace_2
+      conversation: "{{conversation}}"
