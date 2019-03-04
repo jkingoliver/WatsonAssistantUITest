@@ -23,6 +23,9 @@ stages:
   - name: HELM_DOWNLOAD_URL
     value: https://kubernetes-helm.storage.googleapis.com/helm-v2.12.3-linux-amd64.tar.gz
     type: text
+  - name: CONVERSATION
+    value: ${CONVERSATION}
+    type: text
   jobs:
   - name: Build
     type: builder
