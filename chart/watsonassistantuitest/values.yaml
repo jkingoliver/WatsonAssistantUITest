@@ -37,4 +37,4 @@ istio:
   weight: 100
 services:
   conversation:
-    secretKeyRef: conversation-name
+    secretKeyRef: ${CONVERSATION}
