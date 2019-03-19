@@ -8,5 +8,3 @@ applications:
   memory: 256M
   domain: not-used.net
   host: not-used
-  services:
-    - watsonassistantui-conversation-1551375281826
